@@ -1,0 +1,167 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+/* Todos os elementos da página */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --fonte-padrao: 'Arial', Verdana, Helvetica, sans-serif;
+    --font-destaque:'Bebas Neue', cursive;
+    --font-android:'Press Start 2P', cursive;
+}
+
+/* Elementos com o ID "titulo" */
+#titulo {
+    font-family: var(--font-android);
+    color: #380B61;
+    margin:0 auto;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+} 
+
+/* Elementos com o ID "subtitulo" */
+#subtitulo {
+    font-family: var(--font-destaque);
+    color: #380B61;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+} 
+
+#check{
+    display: inline-block;
+}
+
+/* Elementos de tag <fieldset>*/
+fieldset {
+    border: 0;
+}
+
+/* Elemento de tag <body> */
+body{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1066%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(140%2c 102%2c 221%2c 1)'%3e%3c/rect%3e%3ccircle r='30.805' cx='221.58' cy='39.04' fill='url(%23SvgjsLinearGradient1067)'%3e%3c/circle%3e%3ccircle r='38.8' cx='628.72' cy='499.3' fill='url(%23SvgjsLinearGradient1068)'%3e%3c/circle%3e%3ccircle r='31.295' cx='1417.64' cy='0.7' fill='url(%23SvgjsLinearGradient1069)'%3e%3c/circle%3e%3ccircle r='17.72' cx='523.45' cy='552.45' fill='url(%23SvgjsLinearGradient1070)'%3e%3c/circle%3e%3ccircle r='29.31' cx='207.24' cy='369.46' fill='url(%23SvgjsLinearGradient1071)'%3e%3c/circle%3e%3ccircle r='33.175' cx='1147.64' cy='489.09' fill='url(%23SvgjsLinearGradient1072)'%3e%3c/circle%3e%3ccircle r='43.94' cx='1022.35' cy='16.9' fill='url(%23SvgjsLinearGradient1073)'%3e%3c/circle%3e%3ccircle r='48.755' cx='579.2' cy='363.73' fill='url(%23SvgjsLinearGradient1074)'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1066'%3e%3crect width='1440' height='560' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3clinearGradient x1='159.97000000000003' y1='39.04' x2='283.19000000000005' y2='39.04' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1067'%3e%3cstop stop-color='%2384b6e0' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23464a8f' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='551.12' y1='499.30000000000007' x2='706.3199999999999' y2='499.30000000000007' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1068'%3e%3cstop stop-color='%2332325d' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23424488' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1355.0500000000002' y1='0.7000000000000028' x2='1480.2300000000002' y2='0.7000000000000028' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1069'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='488.01000000000005' y1='552.45' x2='558.8900000000001' y2='552.45' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1070'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='148.62' y1='369.46' x2='265.86' y2='369.46' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1071'%3e%3cstop stop-color='%2332325d' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23424488' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1081.2900000000002' y1='489.09000000000003' x2='1213.9900000000002' y2='489.09000000000003' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1072'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='934.47' y1='16.900000000000006' x2='1110.23' y2='16.900000000000006' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1073'%3e%3cstop stop-color='%2384b6e0' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23464a8f' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='481.69000000000005' y1='363.73' x2='676.71' y2='363.73' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1074'%3e%3cstop stop-color='%2384b6e0' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23464a8f' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    color: #59429d;
+    margin-top: 2%;
+    justify-content: center;
+}
+
+
+.glass {
+    background: rgba( 255, 255, 255, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin: 0 auto;
+    width: 50%;
+    padding: 3rem;
+}
+
+/* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #59429d;
+    border-radius: 5px;
+}
+
+/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+/* Elementos de classe "grupo" no estado da pseudoclasse "after" */
+.grupo:after {
+    clear: both;
+}
+
+/* Elementos de classe "campo" */
+.campo {
+    margin-bottom: 1em;
+}
+
+/* Elementos de classe "campo" de tag <label> */
+.campo label {
+    margin-bottom: 0.2em;
+    color: #59429d;
+    display: block;
+}
+
+/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+}
+
+/* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+/* Elementos de classe "campo" de tag <select> e <option>*/
+.campo select option {
+    padding-right: 1em;
+}
+
+/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #E0E0F8;
+}
+
+/* Elemento de classe "botao" */
+.botao {
+    font-size: 1.2em;
+    background: #59429d;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    
+}
+
+/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
+.botao:hover {
+    background: #CCBBFF;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+/* Elementos de classe botão e de tag <select> */
+.botao, select{
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;  
+}
+
+footer  {
+    display:flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+
+    /* glass effect */
+
+    background: rgba( 255, 255, 255, 0.7 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin: 1rem auto;
+    padding: 1.6rem;
+    width: 50%;
+  }
